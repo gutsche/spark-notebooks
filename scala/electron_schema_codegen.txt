@@ -1,0 +1,385 @@
+
+case class Record2 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record1 (
+    fCoordinates : Record2
+)
+
+
+case class Record3 (
+    scPixCharge : Int,
+    isGsfCtfScPixConsistent : Boolean,
+    isGsfScPixConsistent : Boolean,
+    isGsfCtfConsistent : Boolean
+)
+
+
+case class Record5 (
+    processIndex_ : Short,
+    productIndex_ : Short,
+    elementIndex_ : Int
+)
+
+
+case class Record4 (
+    recoGsfElectrons_gsfElectrons__RECO_obj_core__product_ : Record5
+)
+
+
+case class Record8 (
+    processIndex_ : Short,
+    productIndex_ : Short
+)
+
+
+case class Record7 (
+    recoGsfElectrons_gsfElectrons__RECO_obj_trackClusterMatching__electronCluster_core_ : Record8,
+    key_ : Long
+)
+
+
+case class Record6 (
+    electronCluster : Record7,
+    eSuperClusterOverP : Float,
+    eSeedClusterOverP : Float,
+    eSeedClusterOverPout : Float,
+    eEleClusterOverPout : Float,
+    deltaEtaSuperClusterAtVtx : Float,
+    deltaEtaSeedClusterAtCalo : Float,
+    deltaEtaEleClusterAtCalo : Float,
+    deltaPhiEleClusterAtCalo : Float,
+    deltaPhiSuperClusterAtVtx : Float,
+    deltaPhiSeedClusterAtCalo : Float
+)
+
+
+case class Record11 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record10 (
+    fCoordinates : Record11
+)
+
+
+case class Record13 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record12 (
+    fCoordinates : Record13
+)
+
+
+case class Record15 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record14 (
+    fCoordinates : Record15
+)
+
+
+case class Record17 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record16 (
+    fCoordinates : Record17
+)
+
+
+case class Record19 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record18 (
+    fCoordinates : Record19
+)
+
+
+case class Record21 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record20 (
+    fCoordinates : Record21
+)
+
+
+case class Record23 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record22 (
+    fCoordinates : Record23
+)
+
+
+case class Record9 (
+    positionAtVtx : Record10,
+    positionAtCalo : Record12,
+    momentumAtVtx : Record14,
+    momentumAtCalo : Record16,
+    momentumOut : Record18,
+    momentumAtEleClus : Record20,
+    momentumAtVtxWithConstraint : Record22
+)
+
+
+case class Record24 (
+    isEB : Boolean,
+    isEE : Boolean,
+    isEBEEGap : Boolean,
+    isEBEtaGap : Boolean,
+    isEBPhiGap : Boolean,
+    isEEDeeGap : Boolean,
+    isEERingGap : Boolean
+)
+
+
+case class Record27 (
+    id_ : Int
+)
+
+
+case class Record26 (
+    DetId : Record27
+)
+
+
+case class Record25 (
+    sigmaEtaEta : Float,
+    sigmaIetaIeta : Float,
+    sigmaIphiIphi : Float,
+    e1x5 : Float,
+    e2x5Max : Float,
+    e5x5 : Float,
+    r9 : Float,
+    hcalDepth1OverEcal : Float,
+    hcalDepth2OverEcal : Float,
+    recoGsfElectrons_gsfElectrons__RECO_obj_showerShape__hcalTowersBehindClusters : Seq[Record26],
+    hcalDepth1OverEcalBc : Float,
+    hcalDepth2OverEcalBc : Float
+)
+
+
+case class Record28 (
+    tkSumPt : Float,
+    ecalRecHitSumEt : Float,
+    hcalDepth1TowerSumEt : Float,
+    hcalDepth2TowerSumEt : Float,
+    hcalDepth1TowerSumEtBc : Float,
+    hcalDepth2TowerSumEtBc : Float
+)
+
+
+case class Record29 (
+    tkSumPt : Float,
+    ecalRecHitSumEt : Float,
+    hcalDepth1TowerSumEt : Float,
+    hcalDepth2TowerSumEt : Float,
+    hcalDepth1TowerSumEtBc : Float,
+    hcalDepth2TowerSumEtBc : Float
+)
+
+
+case class Record30 (
+    flags : Int,
+    dist : Float,
+    dcot : Float,
+    radius : Float
+)
+
+
+case class Record33 (
+    id_ : Int
+)
+
+
+case class Record32 (
+    DetId : Record33
+)
+
+
+case class Record31 (
+    sigmaEtaEta : Float,
+    sigmaIetaIeta : Float,
+    sigmaIphiIphi : Float,
+    e1x5 : Float,
+    e2x5Max : Float,
+    e5x5 : Float,
+    r9 : Float,
+    hcalDepth1OverEcal : Float,
+    hcalDepth2OverEcal : Float,
+    recoGsfElectrons_gsfElectrons__RECO_obj_pfShowerShape__hcalTowersBehindClusters : Seq[Record32],
+    hcalDepth1OverEcalBc : Float,
+    hcalDepth2OverEcalBc : Float
+)
+
+
+case class Record34 (
+    chargedHadronIso : Float,
+    neutralHadronIso : Float,
+    photonIso : Float
+)
+
+
+case class Record35 (
+    earlyBrem : Int,
+    lateBrem : Int,
+    sigmaEtaEta : Float,
+    hadEnergy : Float,
+    deltaEta : Float,
+    nClusterOutsideMustache : Int,
+    etOutsideMustache : Float
+)
+
+
+case class Record36 (
+    status : Int,
+    mva : Float,
+    mvaByPassForIsolated : Float
+)
+
+
+case class Record39 (
+    processIndex_ : Short,
+    productIndex_ : Short
+)
+
+
+case class Record38 (
+    recoGsfElectrons_gsfElectrons__RECO_obj_ambiguousGsfTracks__refVector__product_ : Record39,
+    recoGsfElectrons_gsfElectrons__RECO_obj_ambiguousGsfTracks__refVector__keys_ : Seq[Int]
+)
+
+
+case class Record37 (
+    refVector_ : Record38
+)
+
+
+case class Record40 (
+    trackFbrem : Float,
+    superClusterFbrem : Float,
+    pfSuperClusterFbrem : Float
+)
+
+
+case class Record43 (
+    fX : Double,
+    fY : Double,
+    fZ : Double,
+    fT : Double
+)
+
+
+case class Record42 (
+    fCoordinates : Record43
+)
+
+
+case class Record45 (
+    fX : Double,
+    fY : Double,
+    fZ : Double,
+    fT : Double
+)
+
+
+case class Record44 (
+    fCoordinates : Record45
+)
+
+
+case class Record47 (
+    fX : Double,
+    fY : Double,
+    fZ : Double,
+    fT : Double
+)
+
+
+case class Record46 (
+    fCoordinates : Record47
+)
+
+
+case class Record41 (
+    isEcalEnergyCorrected : Boolean,
+    correctedEcalEnergy : Float,
+    correctedEcalEnergyError : Float,
+    trackMomentumError : Float,
+    fromSuperClusterP4 : Record42,
+    fromSuperClusterP4Error : Float,
+    combinedP4 : Record44,
+    combinedP4Error : Float,
+    pflowP4 : Record46,
+    pflowP4Error : Float,
+    candidateP4Kind : Int
+)
+
+
+case class Record0 (
+    qx3_ : Int,
+    pt_ : Float,
+    eta_ : Float,
+    phi_ : Float,
+    mass_ : Float,
+    vertex_ : Record1,
+    pdgId_ : Int,
+    status_ : Int,
+    chargeInfo_ : Record3,
+    core_ : Record4,
+    trackClusterMatching_ : Record6,
+    trackExtrapolations_ : Record9,
+    fiducialFlags_ : Record24,
+    showerShape_ : Record25,
+    dr03_ : Record28,
+    dr04_ : Record29,
+    conversionRejection_ : Record30,
+    pfShowerShape_ : Record31,
+    pfIso_ : Record34,
+    mvaInput_ : Record35,
+    mvaOutput_ : Record36,
+    passCutBasedPreselection_ : Boolean,
+    passPflowPreselection_ : Boolean,
+    passMvaPreslection_ : Boolean,
+    ambiguous_ : Boolean,
+    ambiguousGsfTracks_ : Record37,
+    classVariables_ : Record40,
+    class_ : Int,
+    corrections_ : Record41
+)
+
+
+case class Event (
+    electrons : Seq[Record0]
+)

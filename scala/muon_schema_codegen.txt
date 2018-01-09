@@ -1,0 +1,266 @@
+
+case class Record2 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record1 (
+    fCoordinates : Record2
+)
+
+
+case class Record4 (
+    processIndex_ : Short,
+    productIndex_ : Short,
+    elementIndex_ : Int
+)
+
+
+case class Record3 (
+    recoMuons_muons__RECO_obj_innerTrack__product_ : Record4
+)
+
+
+case class Record6 (
+    processIndex_ : Short,
+    productIndex_ : Short,
+    elementIndex_ : Int
+)
+
+
+case class Record5 (
+    recoMuons_muons__RECO_obj_outerTrack__product_ : Record6
+)
+
+
+case class Record8 (
+    processIndex_ : Short,
+    productIndex_ : Short,
+    elementIndex_ : Int
+)
+
+
+case class Record7 (
+    recoMuons_muons__RECO_obj_globalTrack__product_ : Record8
+)
+
+
+case class Record10 (
+    processIndex_ : Short,
+    productIndex_ : Short,
+    elementIndex_ : Int
+)
+
+
+case class Record9 (
+    product_ : Record10
+)
+
+
+case class Record13 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record12 (
+    fCoordinates : Record13
+)
+
+
+case class Record15 (
+    fX : Float,
+    fY : Float,
+    fZ : Float
+)
+
+
+case class Record14 (
+    fCoordinates : Record15
+)
+
+
+case class Record16 (
+    id_ : Int
+)
+
+
+case class Record17 (
+    id_ : Int
+)
+
+
+case class Record11 (
+    tower : Float,
+    towerS9 : Float,
+    em : Float,
+    emS9 : Float,
+    emS25 : Float,
+    emMax : Float,
+    had : Float,
+    hadS9 : Float,
+    hadMax : Float,
+    ho : Float,
+    hoS9 : Float,
+    ecal_time : Float,
+    ecal_timeError : Float,
+    hcal_time : Float,
+    hcal_timeError : Float,
+    ecal_position : Record12,
+    hcal_position : Record14,
+    ecal_id : Record16,
+    hcal_id : Record17
+)
+
+
+case class Record20 (
+    fX : Double,
+    fY : Double,
+    fZ : Double
+)
+
+
+case class Record19 (
+    fCoordinates : Record20
+)
+
+
+case class Record22 (
+    fX : Double,
+    fY : Double,
+    fZ : Double
+)
+
+
+case class Record21 (
+    fCoordinates : Record22
+)
+
+
+case class Record18 (
+    updatedSta : Boolean,
+    trkKink : Float,
+    glbKink : Float,
+    trkRelChi2 : Float,
+    staRelChi2 : Float,
+    chi2LocalPosition : Float,
+    chi2LocalMomentum : Float,
+    localDistance : Float,
+    globalDeltaEtaPhi : Float,
+    tightMatch : Boolean,
+    glbTrackProbability : Float,
+    tkKink_position : Record19,
+    glbKink_position : Record21
+)
+
+
+case class Record23 (
+    nDof : Int,
+    timeAtIpInOut : Float,
+    timeAtIpInOutErr : Float,
+    timeAtIpOutIn : Float,
+    timeAtIpOutInErr : Float
+)
+
+
+case class Record24 (
+    sumPt : Float,
+    emEt : Float,
+    hadEt : Float,
+    hoEt : Float,
+    nTracks : Int,
+    nJets : Int,
+    trackerVetoPt : Float,
+    emVetoEt : Float,
+    hadVetoEt : Float,
+    hoVetoEt : Float
+)
+
+
+case class Record25 (
+    sumPt : Float,
+    emEt : Float,
+    hadEt : Float,
+    hoEt : Float,
+    nTracks : Int,
+    nJets : Int,
+    trackerVetoPt : Float,
+    emVetoEt : Float,
+    hadVetoEt : Float,
+    hoVetoEt : Float
+)
+
+
+case class Record26 (
+    sumChargedHadronPt : Float,
+    sumChargedParticlePt : Float,
+    sumNeutralHadronEt : Float,
+    sumPhotonEt : Float,
+    sumNeutralHadronEtHighThreshold : Float,
+    sumPhotonEtHighThreshold : Float,
+    sumPUPt : Float
+)
+
+
+case class Record27 (
+    sumChargedHadronPt : Float,
+    sumChargedParticlePt : Float,
+    sumNeutralHadronEt : Float,
+    sumPhotonEt : Float,
+    sumNeutralHadronEtHighThreshold : Float,
+    sumPhotonEtHighThreshold : Float,
+    sumPUPt : Float
+)
+
+
+case class Record29 (
+    fX : Double,
+    fY : Double,
+    fZ : Double,
+    fT : Double
+)
+
+
+case class Record28 (
+    fCoordinates : Record29
+)
+
+
+case class Record0 (
+    qx3_ : Int,
+    pt_ : Float,
+    eta_ : Float,
+    phi_ : Float,
+    mass_ : Float,
+    vertex_ : Record1,
+    pdgId_ : Int,
+    status_ : Int,
+    innerTrack_ : Record3,
+    outerTrack_ : Record5,
+    globalTrack_ : Record7,
+    recoMuons_muons__RECO_obj_refittedTrackMap_ : Map[Int, Record9],
+    bestTrackType_ : Int,
+    calEnergy_ : Record11,
+    combinedQuality_ : Record18,
+    time_ : Record23,
+    energyValid_ : Boolean,
+    matchesValid_ : Boolean,
+    isolationValid_ : Boolean,
+    pfIsolationValid_ : Boolean,
+    qualityValid_ : Boolean,
+    caloCompatibility_ : Float,
+    isolationR03_ : Record24,
+    isolationR05_ : Record25,
+    pfIsolationR03_ : Record26,
+    pfIsolationR04_ : Record27,
+    type_ : Int,
+    pfP4_ : Record28
+)
+
+
+case class Event (
+    muons : Seq[Record0]
+)
